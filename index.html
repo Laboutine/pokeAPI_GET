@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <script src="jquery-3.2.1.min.js" ></script>
+  <script src="ajaxGet.js" ></script>
+  <script src="pagination.js" ></script>
+  <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+  <link rel="stylesheet" href='mystyle.css' type='text/css' />
+</head>
+
+<body>
+  <div id="container">
+    <h1><a href="index.html" id="header">Baza danych o Pokemonach</a></h1>
+
+	<div id="square1">
+	
+	 <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>HP</th>
+          </tr>
+        </thead>
+        <tbody>
+		    <tr>
+            <td><a onclick="request('bulbasaur',1)" class="img" ><img src="pokemon/bulbasaur.png" /></a></td>
+            <td>Bulbasaur</td>
+		    <td>45</td>
+		  </tr>
+          <tr>
+            <td><a onclick="request('charmander',2)" class="img"><img src="pokemon/charmander.png" /></td>
+            <td>Charmander</td>
+            <td>39</td>
+          </tr>
+          <tr>
+            <td><a onclick="request('squirtle',3)" class="img"><img src="pokemon/squirtle.png" /></td>
+            <td>Squirtle</td>
+            <td>44</td>
+          </tr>
+          <tr>
+            <td><a onclick="request('diglett',21)" class="img"><img src="pokemon/diglett.png" /></td>
+            <td>Diglett</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <td><a onclick="request('magnemite',34)" class="img"><img src="pokemon/magnemite.png" /></td>
+            <td>Magnemite</td>
+            <td>42</td>                                     
+		  </tr>
+          <tr>
+            <td><a onclick="request('meowth',22)" class="img"><img src="pokemon/meowth.png" /></td>
+            <td>Meowth</td>
+            <td>55</td>                                       
+          </tr>
+          <tr>
+            <td><a onclick="request('mewtwo',77)" class="img"><img src="pokemon/mewtwo.png" /></td>
+            <td>Mewtwo</td>
+            <td>125</td>
+          </tr>
+		  <tr>
+            <td><a onclick="request('onix',41)" class="img"><img src="pokemon/onix.png" /></td>
+            <td>Onix</td>
+            <td>92</td>                                    
+          </tr>
+          <tr>
+            <td><a onclick="request('pikachu',10)" class="img"><img src="pokemon/pikachu.png" /></td>
+            <td>Pikachu</td>
+            <td>44</td>                                        
+          </tr>
+          <tr>
+            <td><a onclick="request('kangaskhan',53)" class="img"><img src="pokemon/kangaskhan.png" /></td>
+            <td>Kangaskhan</td>
+            <td>88</td>                                        
+          </tr>
+          <tr>
+            <td><a onclick="request('rattata',7)" class="img"><img src="pokemon/rattata.png" /></td>
+            <td>Rattata</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td><a onclick="request('snorlax',72)" class="img"><img src="pokemon/snorlax.png" /></td>
+            <td>Snorlax</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+      </table></div>
+	<div id="square2">
+	  <div id="image2"><img src="pokemon/logo.png" /></div>
+	  <div id="stats">
+	    <p style="font-size:20px;" id="name"></p>
+		
+	  </div>
+	  <div id="smallcontainer">
+        <p id=evoheader></p>
+	    <div style="clear:both;"></div>
+        <div id="evo1"></div>
+	    <div class="arrow"></div>
+	    <div id="evo2"></div>
+	    <div class="arrow"></div>
+	    <div id="evo3"></div>
+	    <div style="clear:both;"></div>
+	 </div>
+   </div>				
+   <div style="clear:both;"></div>
+   <div id="pagination"></div>
+</body>
+</html>
